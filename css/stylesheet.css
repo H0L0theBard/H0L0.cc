@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #353434;
+  text-decoration: none;
+}
+
+#title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-wrap: wrap-reverse;
+  flex-direction: column;
+
+}
+
+#title figure{
+  position: absolute;
+  user-select: none;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+}
+
+#title figure img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#title figure video{
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+
+#title h1 {
+  display: inline;
+  font-size: 100px;
+  font-family: 'Fira Code', sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+
+}
+
+.logos {
+  color: #ffffff;
+  stroke: #ffffff;
+}
+
+.divider {
+  background: linear-gradient(#D8097E, #24468E);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+
+}
+
+#title ul {
+  display: flex;
+  column-gap: 20px;
+  transform: scale(1);
+}
+
+#title li {
+  list-style: none;
+}
+
+#title > .overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(20, 26, 50, 0.5) 85%, rgb(53, 52, 52) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.fadeanim{
+  animation: fadeIn 5s;
+}
+
+#maincontent {
+  width:100vw;
+  height: 85vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
+  gap: 50px;
+  padding-top: 50px;
+  
+}
+.contentbox {
+  font-family: 'Fira Code', monospace;
+  width: 50rem;
+  background-color: #262626;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  
+}
+
+.contentbox h1{
+  margin-bottom: 8px;
+  color: white;
+  text-align: left;
+  padding-left: 1vw;
+}
+
+.contentbox .contents {
+  flex: 1;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+
+.contents p {
+  margin: 5px;
+  max-width: 90%;
+}
+.sourcecode {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sourcecode:hover {
+  text-decoration: underline;
+}
+
+.closedsourcecode {
+  color: white;
+  text-decoration: none;
+}
+
+.closedsourcecode:hover {
+  text-decoration: none;
+}
+
+.contents ul {
+  margin-left: 5px;
+  list-style: none;
+
+}
+
+#Ferris{
+  width: 100px;
+  position: relative;
+  top: 150px;
+}
+
+#FerrisBox{
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@media screen and (orientation: portrait) {
+  #title ul {
+    display: flex;
+    column-gap: 20px;
+    transform: scale(2);
+  }
+
+
+  #title h1 {
+    font-size: 200px;
+  }
+  p,ul,li{
+    font-size: 20px;
+
+  }
+
+  .contentbox {
+    height: 400px;
+    width: 90vw;
+  }
+
+  .maincontent{
+    gap: 80px;
+  }
+  
+  #Ferris{
+    top: 200px;
+    width: 150px;
+  }
+
+  #FerrisBox{
+    text-align: right;
+  }
+
+} 
+
