@@ -61,6 +61,7 @@ body {
 
 #title ul {
   display: flex;
+  padding-inline-start: 0px;
   column-gap: 20px;
   transform: scale(1);
 }
@@ -147,7 +148,8 @@ body {
 .contents ul {
   margin-left: 5px;
   list-style: none;
-
+  margin-top: 0px;
+  padding-inline-start: 0px;
 }
 
 #Ferris{
@@ -169,6 +171,7 @@ body {
 @media screen and (orientation: portrait) {
   #title ul {
     display: flex;
+    padding-inline-start: 0px;
     column-gap: 20px;
     transform: scale(2);
   }
