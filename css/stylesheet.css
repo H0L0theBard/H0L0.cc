@@ -42,6 +42,9 @@ body {
   font-size: 100px;
   font-family: 'Fira Code', sans-serif;
   font-weight: 100;
+
+}
+#title #name{
   color: #ffffff;
 
 }
@@ -52,12 +55,7 @@ body {
 }
 
 .divider {
-  background: -webkit-linear-gradient(#D8097E, #24468E);
-  background: linear-gradient(#D8097E, #24468E);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #4d2674;
   font-weight: bold;
 
 }
