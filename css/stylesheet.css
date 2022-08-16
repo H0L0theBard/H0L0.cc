@@ -56,10 +56,9 @@ body {
 }
 
 .divider {
-  background: linear-gradient(#D8097E, #24468E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #4d2674;
   font-weight: bold;
+
 }
 
 #title ul {
